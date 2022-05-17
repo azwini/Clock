@@ -59,13 +59,35 @@
 }
 
 #line {
-  width: 5px;
+  /* width: 5px;
   height: 10px;
   background-color: black;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform-origin: 0 150px;
+  transform-origin: 0 150px; */
+
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 10px;
+  background: #b3b3b0;
+  z-index: 1;
+  transform-origin: 50% 160px;
+}
+
+#line:nth-of-type(5n) {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -2px;
+  width: 4px;
+  height: 25px;
+  background: #b3b3b0;
+  z-index: 1;
+  transform-origin: 50% 165px;
 }
 
 .clock-number {
@@ -73,6 +95,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
+  font-size: x-small;
 }
 
 .clock-number:after {
