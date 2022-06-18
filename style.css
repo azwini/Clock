@@ -30,7 +30,7 @@
 #second {
   position: absolute;
   background: black;
-  border-radius: 10px;
+  border-radius: 1px;
   transform-origin: bottom;
 }
 
@@ -101,14 +101,14 @@
 .clock-number:after {
   content: "";
   position: absolute;
-  height: 13px;
-  width: 3px;
-  top: 13%;
+  height: 15px;
+  width: 1px;
+  top: 6%;
   background: #000;
 }
 
 .clock-number > div {
-  padding: 12px;
+  padding: 2px;
 }
 .num1 {
   transform: rotate(30deg);
@@ -194,4 +194,408 @@
 
 .num12 > div {
   transform: rotate(-360deg);
+}
+
+.line-number {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: x-small;
+}
+
+.line-number:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 1px;
+  top: 6%;
+  background: #000;
+}
+.line-number > div {
+  padding: 2px;
+}
+
+.line01 {
+  transform: rotate(6deg);
+}
+
+.line01 > div {
+  transform: rotate(-6deg);
+}
+
+.line02 {
+  transform: rotate(12deg);
+}
+
+.line02 > div {
+  transform: rotate(-12deg);
+}
+
+.line03 {
+  transform: rotate(18deg);
+}
+
+.line03 > div {
+  transform: rotate(-18deg);
+}
+
+.line04 {
+  transform: rotate(24deg);
+}
+
+.line04 > div {
+  transform: rotate(-24deg);
+}
+
+.line11 {
+  transform: rotate(36deg);
+}
+
+.line11 > div {
+  transform: rotate(-36deg);
+}
+
+.line12 {
+  transform: rotate(42deg);
+}
+
+.line12 > div {
+  transform: rotate(-42deg);
+}
+
+.line13 {
+  transform: rotate(48deg);
+}
+
+.line13 > div {
+  transform: rotate(-48deg);
+}
+
+.line14 {
+  transform: rotate(54deg);
+}
+
+.line14 > div {
+  transform: rotate(-54deg);
+}
+
+.line21 {
+  transform: rotate(66deg);
+}
+
+.line21 > div {
+  transform: rotate(-66deg);
+}
+
+.line22 {
+  transform: rotate(72deg);
+}
+
+.line22 > div {
+  transform: rotate(-72deg);
+}
+
+.line23 {
+  transform: rotate(78deg);
+}
+
+.line23 > div {
+  transform: rotate(-78deg);
+}
+
+.line24 {
+  transform: rotate(84deg);
+}
+
+.line24 > div {
+  transform: rotate(-84deg);
+}
+
+.line31 {
+  transform: rotate(96deg);
+}
+
+.line31 > div {
+  transform: rotate(-96deg);
+}
+
+.line32 {
+  transform: rotate(102deg);
+}
+
+.line32 > div {
+  transform: rotate(-102deg);
+}
+
+.line33 {
+  transform: rotate(108deg);
+}
+
+.line33 > div {
+  transform: rotate(-108deg);
+}
+
+.line34 {
+  transform: rotate(114deg);
+}
+
+.line34 > div {
+  transform: rotate(-114deg);
+}
+
+.line41 {
+  transform: rotate(126deg);
+}
+
+.line41 > div {
+  transform: rotate(-126deg);
+}
+
+.line42 {
+  transform: rotate(132deg);
+}
+
+.line42 > div {
+  transform: rotate(-132deg);
+}
+
+.line43 {
+  transform: rotate(138deg);
+}
+
+.line43 > div {
+  transform: rotate(-138deg);
+}
+
+.line44 {
+  transform: rotate(144deg);
+}
+
+.line44 > div {
+  transform: rotate(-144deg);
+}
+
+.line51 {
+  transform: rotate(156deg);
+}
+
+.line51 > div {
+  transform: rotate(-156deg);
+}
+
+.line52 {
+  transform: rotate(162deg);
+}
+
+.line52 > div {
+  transform: rotate(-162deg);
+}
+
+.line53 {
+  transform: rotate(168deg);
+}
+
+.line53 > div {
+  transform: rotate(-168deg);
+}
+
+.line54 {
+  transform: rotate(174deg);
+}
+
+.line54 > div {
+  transform: rotate(-174deg);
+}
+
+.line61 {
+  transform: rotate(186deg);
+}
+
+.line61 > div {
+  transform: rotate(-186deg);
+}
+
+.line62 {
+  transform: rotate(192deg);
+}
+
+.line62 > div {
+  transform: rotate(-192deg);
+}
+
+.line63 {
+  transform: rotate(198deg);
+}
+
+.line63 > div {
+  transform: rotate(-198deg);
+}
+
+.line64 {
+  transform: rotate(204deg);
+}
+
+.line64 > div {
+  transform: rotate(-204deg);
+}
+
+.line71 {
+  transform: rotate(216deg);
+}
+
+.line71 > div {
+  transform: rotate(-216deg);
+}
+
+.line72 {
+  transform: rotate(222deg);
+}
+
+.line72 > div {
+  transform: rotate(-222deg);
+}
+
+.line73 {
+  transform: rotate(228deg);
+}
+
+.line73 > div {
+  transform: rotate(-228deg);
+}
+
+.line74 {
+  transform: rotate(234deg);
+}
+
+.line74 > div {
+  transform: rotate(-234deg);
+}
+
+.line81 {
+  transform: rotate(246deg);
+}
+
+.line81 > div {
+  transform: rotate(-246deg);
+}
+
+.line82 {
+  transform: rotate(252deg);
+}
+
+.line82 > div {
+  transform: rotate(-252deg);
+}
+
+.line83 {
+  transform: rotate(258deg);
+}
+
+.line83 > div {
+  transform: rotate(-258deg);
+}
+
+.line84 {
+  transform: rotate(264deg);
+}
+
+.line84 > div {
+  transform: rotate(-264deg);
+}
+
+.line91 {
+  transform: rotate(276deg);
+}
+
+.line91 > div {
+  transform: rotate(-276deg);
+}
+
+.line92 {
+  transform: rotate(282deg);
+}
+
+.line92 > div {
+  transform: rotate(-282deg);
+}
+
+.line93 {
+  transform: rotate(288deg);
+}
+
+.line93 > div {
+  transform: rotate(-288deg);
+}
+
+.line94 {
+  transform: rotate(294deg);
+}
+
+.line94 > div {
+  transform: rotate(-294deg);
+}
+
+.line101 {
+  transform: rotate(306deg);
+}
+
+.line101 > div {
+  transform: rotate(-306deg);
+}
+
+.line102 {
+  transform: rotate(312deg);
+}
+
+.line102 > div {
+  transform: rotate(-312deg);
+}
+
+.line103 {
+  transform: rotate(318deg);
+}
+
+.line103 > div {
+  transform: rotate(-318deg);
+}
+
+.line104 {
+  transform: rotate(324deg);
+}
+
+.line104 > div {
+  transform: rotate(-324deg);
+}
+
+.line111 {
+  transform: rotate(336deg);
+}
+
+.line111 > div {
+  transform: rotate(-336deg);
+}
+
+.line112 {
+  transform: rotate(342deg);
+}
+
+.line112 > div {
+  transform: rotate(-342deg);
+}
+
+.line113 {
+  transform: rotate(348deg);
+}
+
+.line113 > div {
+  transform: rotate(-348deg);
+}
+
+.line114 {
+  transform: rotate(354deg);
+}
+
+.line114 > div {
+  transform: rotate(-354deg);
 }
