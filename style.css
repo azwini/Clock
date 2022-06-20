@@ -1,21 +1,3 @@
-/* div:after {
-  background: linear-gradient(45deg, #ccc 40%, #ddd 100%);
-  border-radius: 50%;
-  box-shadow: 0 3px 2px #999, 1px -2px 0 white, -1px -3px 2px #555,
-    0 0 0 15px #c2c2c2, 0 -2px 0 15px white, -2px -5px 1px 17px #666,
-    0 10px 10px 15px black(0.3), -90px -51px 1px -43px #aaa,
-    -90px -50px 1px -40px #888, -90px -51px 0 -34px #ccc,
-    -90px -50px 0 -30px #aaa, -90px -48px 1px -28px black(0.2),
-    -124px -73px 1px -48px #eee, -125px -72px 0 -46px #666,
-    -85px -73px 1px -48px #eee, -86px -72px 0 -46px #666,
-    42px -82px 1px -48px #eee, 41px -81px 0 -46px #777,
-    67px -73px 1px -48px #eee, 66px -72px 0 -46px #666,
-    -46px -86px 1px -45px #444, -44px -87px 0 -38px #333,
-    -44px -86px 0 -37px #ccc, -44px -85px 0 -34px #999,
-    14px -89px 1px -48px #eee, 12px -84px 1px -48px #999,
-    23px -85px 0 -47px #444, 23px -87px 0 -46px #888;
-} */
-
 #clockContainer {
   position: inherit;
   margin: auto;
@@ -23,6 +5,28 @@
   /*to make the height and width responsive*/
   width: 32vw;
   background-size: 100%;
+}
+
+#clockContainer::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 18px;
+  margin-left: -9px;
+  margin-top: -6px;
+  /* background: #4d4b63; */
+  z-index: 11;
+  border: 1px solid black;
+  background-image: radial-gradient(
+    closest-corner at 50% 54%,
+    white,
+    white,
+    white,
+    gray
+  );
 }
 
 #hour,
@@ -58,15 +62,22 @@
   opacity: 0.8;
 }
 
-#line {
-  /* width: 5px;
-  height: 10px;
-  background-color: black;
-  position: absolute;
+.round {
+  /* background-color: red; */
+  height: 0.6vmax;
+  width: 0.6vmax;
   left: 50%;
-  top: 50%;
-  transform-origin: 0 150px; */
+  top: 112%;
+  /* border-radius: 50%; */
+  display: block;
+  opacity: 1;
+  position: absolute;
+  /*   bottom: 0vmax; */
+  left: -0.4vmax;
+  border: 1px solid black;
+}
 
+#line {
   position: absolute;
   top: 15px;
   left: 50%;
@@ -96,6 +107,8 @@
   height: 100%;
   text-align: center;
   font-size: x-small;
+  font-family: "Manrope VF", Manrope, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
 }
 
 .clock-number:after {
@@ -105,6 +118,8 @@
   width: 1px;
   top: 6%;
   background: #000;
+  font-family: "Manrope VF", Manrope, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
 }
 
 .clock-number > div {
@@ -202,6 +217,8 @@
   height: 100%;
   text-align: center;
   font-size: x-small;
+  font-family: "Manrope VF", Manrope, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
 }
 
 .line-number:after {
