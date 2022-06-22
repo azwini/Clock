@@ -5,76 +5,6 @@
     <script src="index.js"></script>
   </head>
 
-  <style>
-    div {
-      border-radius: 50%;
-    }
-
-    .circle1 {
-      position: relative;
-      width: 300px;
-      height: 300px;
-      background-color: black;
-      outline-color: black;
-    }
-
-    .circle2 {
-      transform: translate(0.5%, 0.5%);
-      width: 297px;
-      height: 297px;
-      background-image: linear-gradient(
-        to bottom,
-        rgb(224, 224, 224) 50%,
-        rgb(10, 10, 10) 100%
-      );
-    }
-
-    .circle3 {
-      transform: translate(0.9%, 0.9%);
-      width: 291px;
-      height: 291px;
-      background-image: linear-gradient(
-        to bottom,
-        rgb(160, 160, 160) 50%,
-        rgb(255, 255, 255) 100%
-      );
-      border: 1px solid black;
-    }
-
-    .circle4 {
-      transform: translate(1.2%, 1%);
-      width: 282px;
-      height: 282px;
-      background-image: linear-gradient(
-        to bottom,
-        rgb(0, 0, 0) 30%,
-        rgb(255, 255, 255) 100%
-      );
-      border: 1px solid black;
-    }
-
-    .circle5 {
-      transform: translate(0.7%, 1%);
-      width: 279px;
-      height: 279px;
-      background-color: rgb(192, 192, 192);
-    }
-
-    .circle6 {
-      transform: translate(2%, 2%);
-      width: 266px;
-      height: 265px;
-      border: 1px solid black;
-      background-image: radial-gradient(
-        closest-corner at 50% 54%,
-        white,
-        white,
-        white,
-        gray
-      );
-    }
-  </style>
-
   <body>
     <div class="circle1">
       <div class="circle2">
@@ -110,44 +40,7 @@
                       });
                   </script>
 
-                  <!-- void clockLayout()
-{
-int i,x,y,r;
-float j;
-maxx=getmaxx();
-maxy=getmaxy();
- 
-for(i=1;i<5;i++)
-{                   /* printing a round ring with outer radius of 5 pixel */
-  setcolor(YELLOW);
-  circle(maxx/2,maxy/2,120-i);
-}
- 
-pieslice(maxx/2,maxy/2,0,360,5);    /* displaying a circle in the middle of clock */
-x=maxx/2+100;y=maxy/2;
-r=100;
-setcolor(BLUE);
- 
-for(j=PI/6;j<=(2*PI);j+=(PI/6))
-{    /* marking the hours for every 30 degrees */
-  pieslice(x,y,0,360,4);
-  x=(maxx/2)+r*cos(j);
-  y=(maxy/2)+r*sin(j);
-}
- 
-x=maxx/2+100;y=maxy/2;
-r=100;
-setcolor(RED);
- 
-for(j=PI/30;j<=(2*PI);j+=(PI/30))
-{  /* marking the minutes for every 6 degrees */
-  pieslice(x,y,0,360,2);
-  x=(maxx/2)+r*cos(j);
-  y=(maxy/2)+r*sin(j);
-}
-} -->
-
-                  <div>
+                  <!-- <div>
                     <div class="line-number line01"><div class=""></div></div>
                     <div class="line-number line02"><div class=""></div></div>
                     <div class="line-number line03"><div class=""></div></div>
@@ -207,7 +100,8 @@ for(j=PI/30;j<=(2*PI);j+=(PI/30))
                     <div class="line-number line112"><div class=""></div></div>
                     <div class="line-number line113"><div class=""></div></div>
                     <div class="line-number line114"><div class=""></div></div>
-                  </div>
+                  </div> -->
+
                   <!-- Clock number-->
                   <!-- <div class="clock-number num1"><div class="">1</div></div>
                   <div class="clock-number num2"><div class="">2</div></div>
